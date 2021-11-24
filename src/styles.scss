@@ -1,0 +1,43 @@
+/* Add application styles & imports to this file! */
+
+.ql-editor .ql-font-xsmall, .ql-editor .font-xsmall {
+    font-size: 0.7em ;
+}
+
+.ql-editor .ql-font-small, .ql-editor .font-small {
+    font-size: 0.9em ;
+}
+
+.ql-editor .ql-font-medium, .ql-editor .font-medium{
+    font-size: 1em ;
+}
+
+.ql-editor .ql-font-large, .ql-editor .font-large {
+    font-size: 1.2em ;
+}
+
+.ql-editor .ql-font-xlarge, .ql-editor .font-xlarge {
+    font-size: 1.4em ;
+}
+
+.ql-picker.ql-size .ql-picker-item[data-value='xsmall']::before {
+    content: 'xsmall' !important;
+    font-size: 0.7em;
+}
+
+.ql-picker.ql-size .ql-picker-item[data-value='small']::before {
+    content: 'small'  !important;
+    font-size: 0.9em;
+}
+.ql-picker.ql-size .ql-picker-item[data-value='medium']::before {
+    content: 'medium'  !important;
+    font-size: 1em;
+}
+.ql-picker.ql-size .ql-picker-item[data-value='large']::before {
+    content: 'large'  !important;
+    font-size: 1.2em;
+}
+.ql-picker.ql-size .ql-picker-item[data-value='xlarge']::before {
+    content: 'xlarge'  !important;
+    font-size: 1.4em;
+}

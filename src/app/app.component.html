@@ -1,0 +1,22 @@
+
+<p>
+  Type anything in Quill editor, then click `Log` button. Value of <code>touched</code> = false
+  </p>
+  <p>Refresh, then type anything in textarea, then click `Log` button. Value of <code>touched</code> = true
+  </p>
+  <p>I would expect the value of <code>touched</code> to be true in first case also</p>
+  <div [formGroup]="form">
+    <quill-editor
+      placeholder="Enter Text"
+      formControlName="text"
+      [modules]="quillConfig"
+      (onBlur)="blur()"
+      (onSelectionChanged)="onSelectionChanged()">
+    </quill-editor>
+  </div>
+    
+  <div [formGroup]="form">
+    <textarea formControlName="text"></textarea>
+  </div>
+  <button (click)="logForm()">Log</button>
+  
